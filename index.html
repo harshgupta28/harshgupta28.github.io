@@ -1,35 +1,582 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Startup</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Gupta - Backend Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/">HG</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <!-- Your own stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <div class="container d-flex align-items-center h-100">
-      <div class="row">
-        <header class="text-center col-12">
-          <h1 class="text-uppercase">
-          <strong>The biggest startup event of the year</strong>
-          </h1>
-        </header>
-        <div class="buffer col-12"></div>
-        <section class="text-center col-12">
-          <hr>
-          <a href="https://mailchi.mp/78ce330742ab/greatideas">
-            <button class="btn btn-primary btn-xl">Find out more</button>
-          </a>
-        </section>
-      </div>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Harsh Gupta</span>
+                </h1>
+                <h2 class="hero-subtitle">Backend Developer at Paytm</h2>
+                <p class="hero-description">
+                    Passionate about building scalable backend systems and solving complex problems. 
+                    Currently working on Recharges and Rent team at Paytm, focusing on high-performance 
+                    applications that serve millions of users.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-animation">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-dot"></span>
+                            <span class="terminal-dot"></span>
+                            <span class="terminal-dot"></span>
+                        </div>
+                        <div class="terminal-content">
+                            <span class="typing-text">const developer = {</span>
+                            <span class="typing-text">  name: "Harsh Gupta",</span>
+                            <span class="typing-text">  role: "Backend Developer",</span>
+                            <span class="typing-text">  company: "Paytm",</span>
+                            <span class="typing-text">  skills: ["Node.js", "Java", "Python"],</span>
+                            <span class="typing-text">  passion: "Building scalable systems"</span>
+                            <span class="typing-text">};</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+</section>
+
+<!-- Skills Section -->
+<section class="skills">
+    <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Backend Development</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Node.js</span>
+                    <span class="skill-item">Java</span>
+                    <span class="skill-item">Python</span>
+                    <span class="skill-item">Express.js</span>
+                    <span class="skill-item">Spring Boot</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Databases</h3>
+                <div class="skill-items">
+                    <span class="skill-item">MySQL</span>
+                    <span class="skill-item">MongoDB</span>
+                    <span class="skill-item">Redis</span>
+                    <span class="skill-item">PostgreSQL</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Git</span>
+                    <span class="skill-item">Docker</span>
+                    <span class="skill-item">AWS</span>
+                    <span class="skill-item">REST APIs</span>
+                    <span class="skill-item">Microservices</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">25+</div>
+                <div class="stat-label">GitHub Repositories</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">LeetCode Problems</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Major Projects</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <h3>Who I Am</h3>
+                <p>
+                    I'm Harsh Gupta, a Backend Developer currently working at Paytm in the Recharges and Rent team. 
+                    With over 3 years of experience in software development, I specialize in building high-performance, 
+                    scalable backend systems that serve millions of users.
+                </p>
+                <p>
+                    My journey in software development started with a passion for solving complex problems and 
+                    creating efficient solutions. I believe in writing clean, maintainable code and following 
+                    best practices to ensure the reliability and scalability of the systems I build.
+                </p>
+                <p>
+                    When I'm not coding, you can find me solving algorithmic problems on LeetCode, 
+                    contributing to open-source projects on GitHub, or exploring new technologies to stay 
+                    ahead of the curve in this ever-evolving field.
+                </p>
+            </div>
+            <div class="about-image">
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <h3>Harsh Gupta</h3>
+                        <p>Backend Developer</p>
+                    </div>
+                    <div class="profile-details">
+                        <div class="detail-item">
+                            <i class="fas fa-building"></i>
+                            <span>Paytm</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Noida, India</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>Recharges and Rent Team</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Timeline -->
+<section class="experience">
+    <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Backend Developer</h3>
+                    <h4>Paytm</h4>
+                    <p class="timeline-date">2021 - Present</p>
+                    <p>
+                        Working on the Recharges and Rent team, developing and maintaining high-performance 
+                        backend systems that handle millions of transactions daily. Focused on building 
+                        scalable microservices and optimizing database performance.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Microservices</span>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Software Developer</h3>
+                    <h4>Previous Experience</h4>
+                    <p class="timeline-date">2019 - 2021</p>
+                    <p>
+                        Developed and maintained various web applications, working with different technologies 
+                        and frameworks. Gained experience in full-stack development and database design.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Achievements -->
+<section class="achievements">
+    <div class="container">
+        <h2 class="section-title">Achievements & Certifications</h2>
+        <div class="achievements-grid">
+            <div class="achievement-item">
+                <i class="fas fa-trophy"></i>
+                <h3>Pull Shark</h3>
+                <p>GitHub Achievement for significant contributions to open source</p>
+            </div>
+            <div class="achievement-item">
+                <i class="fas fa-code"></i>
+                <h3>100+ LeetCode Problems</h3>
+                <p>Solved various algorithmic and data structure problems</p>
+            </div>
+            <div class="achievement-item">
+                <i class="fab fa-github"></i>
+                <h3>25+ GitHub Repositories</h3>
+                <p>Active contributor to open source and personal projects</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">A collection of my work and contributions</p>
+        
+        <!-- Featured Projects -->
+        <div class="projects-grid">
+            <div class="project-card featured">
+                <div class="project-image">
+                    <div class="project-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>CentralHospital</h3>
+                    <p>
+                        A comprehensive hospital management system built with Java. Features include 
+                        patient management, appointment scheduling, and medical records tracking.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Swing</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/harshgupta28/CentralHospital" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card featured">
+                <div class="project-image">
+                    <div class="project-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>OMR Answer Sheet Checker</h3>
+                    <p>
+                        Software for checking OMR answer sheets using computer vision. Automates 
+                        the process of grading multiple choice questions with high accuracy.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Computer Vision</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/harshgupta28/Hackathon21" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card featured">
+                <div class="project-image">
+                    <div class="project-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>DSA Practice Repository</h3>
+                    <p>
+                        A comprehensive collection of Data Structures and Algorithms implementations 
+                        with solutions to various coding problems and interview questions.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Algorithms</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/harshgupta28/DSA" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Computer Networks</h3>
+                    <p>Implementation of various computer networking concepts and protocols.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Networking</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/harshgupta28/ComputerNetworks" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Java Learning Repository</h3>
+                    <p>Comprehensive Java learning materials and practical examples.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">OOP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/harshgupta28/Java" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Git Practice Repository</h3>
+                    <p>Personal repository for practicing Git commands and version control.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">Version Control</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/harshgupta28/SelfGit" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GitHub Stats -->
+        <div class="github-stats-inline">
+            <h3>GitHub Activity</h3>
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <i class="fab fa-github"></i>
+                    <h4>25+</h4>
+                    <p>Repositories</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <h4>38</h4>
+                    <p>Stars Received</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-code-branch"></i>
+                    <h4>Active</h4>
+                    <p>Contributor</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-trophy"></i>
+                    <h4>Pull Shark</h4>
+                    <p>Achievement</p>
+                </div>
+            </div>
+            <div class="github-cta">
+                <a href="https://github.com/harshgupta28" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> View My GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's discuss your next project or just say hello!</p>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p>
+                    I'm always interested in hearing about new opportunities and exciting projects. 
+                    Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                </p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>Available for new opportunities</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Noida, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-building"></i>
+                        <div>
+                            <h4>Current Role</h4>
+                            <p>Backend Developer at Paytm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form id="contactForm" class="form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Social Links -->
+<section class="social-links-section">
+    <div class="container">
+        <h2 class="section-title">Connect With Me</h2>
+        <div class="social-grid">
+            <a href="https://github.com/harshgupta28" target="_blank" class="social-card">
+                <i class="fab fa-github"></i>
+                <h3>GitHub</h3>
+                <p>Check out my projects and contributions</p>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/harshgupta28/" target="_blank" class="social-card">
+                <i class="fab fa-linkedin"></i>
+                <h3>LinkedIn</h3>
+                <p>Connect professionally</p>
+            </a>
+            
+            <a href="https://leetcode.com/u/harshgupta28/" target="_blank" class="social-card">
+                <i class="fas fa-code"></i>
+                <h3>LeetCode</h3>
+                <p>View my coding solutions</p>
+            </a>
+            
+            <a href="https://www.hackerrank.com/profile/harshgupta28" target="_blank" class="social-card">
+                <i class="fab fa-hackerrank"></i>
+                <h3>HackerRank</h3>
+                <p>See my problem-solving skills</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Resume Download -->
+<section class="resume-section">
+    <div class="container">
+        <div class="resume-content">
+            <h2>Download My Resume</h2>
+            <p>Get a detailed overview of my experience and skills</p>
+            <div class="resume-buttons">
+                <a href="https://drive.google.com/uc?export=download&id=13OpUTTBqgufkK7sAEmStur-T8y6Kc9n5" target="_blank" class="btn btn-secondary">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+                <a href="https://drive.google.com/file/d/13OpUTTBqgufkK7sAEmStur-T8y6Kc9n5/view" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-eye"></i> View Resume
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Harsh Gupta</h3>
+                    <p>Backend Developer at Paytm</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/harshgupta28" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/harshgupta28/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://leetcode.com/u/harshgupta28/" target="_blank"><i class="fas fa-code"></i></a>
+                        <a href="https://www.hackerrank.com/profile/harshgupta28" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Harsh Gupta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
 </html>
